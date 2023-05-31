@@ -56,6 +56,10 @@ const server = http.createServer((req, res)=>{
             <li>Teléfono</li>
             <li>Dirección</li>
         </ul>`);
+    }else if(req.url === '/blog'){
+        res.writeHead(200, {'Content-Type':'html; charset=utf8' }); //el charset nos sirve para que la respuesta admita ACENTOS
+        res.end(`<h1>Bienvenido a la Seccion del Blog</h1>
+        <h3>Aqui encontraras publicaciones con noticias e innovacion referentes al area de Programación</h3>`)
     }else{
         res.statusCode = 404;
         res.setHeader('Content-Type', 'text/plain');

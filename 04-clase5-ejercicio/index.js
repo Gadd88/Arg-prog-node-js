@@ -31,7 +31,10 @@ app.get('/productos', (req,res) => {
 })
 
 app.get('*', (req,res) => {
-    res.status(404).send(`{"error": "404", "description": "No se encuentra la ruta especificada."}`);
+    res.status(404).send(`{
+        "error": "404", 
+        "description": "No se encuentra la ruta especificada."
+    }`);
 });
 
 //INICIALIZACION DEL SERVIDOR

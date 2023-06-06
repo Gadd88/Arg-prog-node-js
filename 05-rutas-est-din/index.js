@@ -1,5 +1,6 @@
 //creacion del server
 const express = require('express');
+const path = require('path')
 const PORT = 3002;
 const app = express();
 
@@ -15,22 +16,30 @@ const cursos = [
     {id: 7, nombre: 'Customer Experience', categoria: 'Producto'}
 ]
 
+//middleware
+app.set('view engine', 'ejs');
+const views = path.join(__dirname, './views/pages');
+
+
 //rutas
 app.get('/', (req,res) => {
-    res.send('Hola Mundo');
-})
+    res.render(path.join(views, 'index'));
+});
 
 
 
 app.get('/cursos', (req,res) => {
-    res.send('Hola Mundo');
-})
+    res.render(path.join(views, 'cursos'));
+});
 
 
 
 app.get('*', (req,res) => {
-    res.status('404').send(`{"error": "404", "description": "No se encuentra la ruta especificada."}`)
-})
+    res.status('404').send(`{
+        "error": "404", 
+        "description": "No se encuentra la ruta especificada."
+    }`);
+});
 
 
 

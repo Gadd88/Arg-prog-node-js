@@ -1,4 +1,5 @@
-<%- include('head')%>
+<%- include('../partials/head.ejs')%>
+
 <div class="container">
     <div class="table">
         <h2> <%= title %> </h2>
@@ -25,7 +26,7 @@
                             <td><%=products[i].category%></td>
                             <td>$<%=products[i].price%></td>
                         </tr>
-                        <% }
+                    <% }
                 %>
             </tbody>
             <tfooter>
@@ -40,7 +41,7 @@
 </div>
 
 
-<%- include('footer')%>
+<%- include('../partials/footer.ejs')%>
 
 </body>
 </html>

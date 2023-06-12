@@ -1,0 +1,31 @@
+PUNTO 1: https://randomuser.me/api/?results=5000
+RESPUESTA: 19325ms - 5.16mb - 5000 JSON
+
+
+PUNTO 2: https://randomuser.me/api/?results=4500
+RESPUESTA: 17043ms - 4.64mb - 4500 JSON
+
+
+PUNTO 3: https://randomuser.me/api/?results=50&gender=female&nat=es
+RESPUESTA: 551ms - 53.09kb - 50 JSON
+
+
+PUNTO 4: https://randomuser.me/api/?results=10&nat=au
+RESPUESTA: 341ms - 10.56kb - 10 JSON
+
+
+PUNTO 5: https://randomuser.me/api/?results=40&nat=au,br,ca,es
+RESPUESTA: 631ms - 42.55kb - 40 JSON
+
+
+PUNTO 6: https://randomuser.me/api/?results=60&inc=name,nat,email,cell,picture
+RESPUESTA: 463ms - 19.31kb - 60 JSON
+
+
+PUNTO 7: https://randomuser.me/api/?results=60&inc=name,nat,email,cell,picture
+RESPUESTA: 513ms - 26.19kb - 60 XML
+
+name, gender, location, email, login, registered
+dob, phone, cell, id, picture, nat
+
+name,nat,email,cell,picture

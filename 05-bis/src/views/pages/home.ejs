@@ -1,0 +1,45 @@
+
+<%-include ('../partials/header.ejs')%>
+
+    <h1>Hola Mundo desde EJS</h1>
+    <h3>Programación Backend con NodeJs - Express</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- //con ciclo for -->
+            <% 
+                for (let i = 0; i < personas.length; i++) { %>
+                    <% if (personas[i]?.edad >= 15) { %>
+                        <tr>
+                            <td><%= personas[i].nombre %></td>
+                            <td><%= personas[i].apellido %></td>
+                            <td><%= personas[i].edad %></td>
+                        </tr>
+                    <% } %>
+                <% } 
+            %>
+
+            // con forEach
+
+            <% personas.forEach((persona) => {
+                if (persona?.edad >= 15) { %>
+                    <tr>
+                        <td><%= persona.nombre %></td>
+                        <td><%= persona.apellido %></td>
+                        <td><%= persona.edad %></td>
+                    </tr>
+                <% } 
+            }); %>
+        </tbody>
+    </table>
+    <br>
+
+
+<%-include ('../partials/footer.ejs')%>

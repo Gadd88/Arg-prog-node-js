@@ -2,6 +2,13 @@
 
 <div class="container">
     <h3>Cursos</h1>
+        <ul>
+            <%
+                for (let curso of cursos){ %>
+                    <li>Nombre: <strong><%= curso.nombre %> </strong>| Categoria: <span><em><%= curso.categoria %></em></span></li> 
+                <%}
+            %>
+        </ul>
 </div> 
 
 

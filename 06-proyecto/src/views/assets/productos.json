@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "producto" : "Televisor Smart 49",
+        "precio": 150000,
+        "stock": 10
+    },
+    {
+        "id" : 2,
+        "producto" : "Televisor Smart 32",
+        "precio": 80000,
+        "stock": 5
+    },
+    {
+        "id" : 3,
+        "producto" : "HomeTeather Muteki Sony",
+        "precio": 95000,
+        "stock": 7
+    },
+    {
+        "id" : 4,
+        "producto" : "Heladera Whirlpool 150L",
+        "precio": 165000,
+        "stock": 2
+    },
+    {
+        "id" : 5,
+        "producto" : "Horno Electrico Phillips 45L",
+        "precio": 37599,
+        "stock": 8
+    },
+    {
+        "id" : 6,
+        "producto" : "Lavarropas Drean V5 800rpm",
+        "precio": 77899,
+        "stock": 15
+    },
+    {
+        "id" : 7,
+        "producto" : "Secarropas Drean 9kg",
+        "precio": 23599,
+        "stock": 18
+    },
+    {
+        "id" : 8,
+        "producto" : "Tendedero de Ropa Acero Inox",
+        "precio": 13999,
+        "stock": 4
+    },
+    {
+        "id" : 9,
+        "producto" : "Freezer Vertical 250L",
+        "precio": 185999,
+        "stock": 6
+    },
+    {
+        "id" : 10,
+        "producto" : "Cocina 4 Hornallas Eléctrica",
+        "precio": 65999,
+        "stock": 2
+    }
+]

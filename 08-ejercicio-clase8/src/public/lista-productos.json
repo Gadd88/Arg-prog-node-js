@@ -1,0 +1,802 @@
+[
+    {
+      "id": 1,
+      "nombre": "iPhone 9",
+      "marca": "Apple",
+      "categoria": "smartphones",
+      "importe": 549,
+      "stock": 94
+    },
+    {
+      "id": 2,
+      "nombre": "iPhone X",
+      "marca": "Apple",
+      "categoria": "smartphones",
+      "importe": 899,
+      "stock": 34
+    },
+    {
+      "id": 3,
+      "nombre": "Samsung Universe 9",
+      "marca": "Samsung",
+      "categoria": "smartphones",
+      "importe": 1249,
+      "stock": 36
+    },
+    {
+      "id": 4,
+      "nombre": "OPPOF19",
+      "marca": "OPPO",
+      "categoria": "smartphones",
+      "importe": 280,
+      "stock": 123
+    },
+    {
+      "id": 5,
+      "nombre": "Huawei P30",
+      "marca": "Huawei",
+      "categoria": "smartphones",
+      "importe": 499,
+      "stock": 32
+    },
+    {
+      "id": 6,
+      "nombre": "MacBook Pro",
+      "marca": "Apple",
+      "categoria": "laptops",
+      "importe": 1749,
+      "stock": 83
+    },
+    {
+      "id": 7,
+      "nombre": "Samsung Galaxy Book",
+      "marca": "Samsung",
+      "categoria": "laptops",
+      "importe": 1499,
+      "stock": 50
+    },
+    {
+      "id": 8,
+      "nombre": "Microsoft Surface Laptop 4",
+      "marca": "Microsoft Surface",
+      "categoria": "laptops",
+      "importe": 1499,
+      "stock": 68
+    },
+    {
+      "id": 9,
+      "nombre": "Infinix INBOOK",
+      "marca": "Infinix",
+      "categoria": "laptops",
+      "importe": 1099,
+      "stock": 96
+    },
+    {
+      "id": 10,
+      "nombre": "HP Pavilion 15-DK1056WM",
+      "marca": "HP Pavilion",
+      "categoria": "laptops",
+      "importe": 1099,
+      "stock": 89
+    },
+    {
+      "id": 11,
+      "nombre": "perfume Oil",
+      "marca": "Impression of Acqua Di Gio",
+      "categoria": "fragrances",
+      "importe": 13,
+      "stock": 65
+    },
+    {
+      "id": 12,
+      "nombre": "Brown Perfume",
+      "marca": "Royal_Mirage",
+      "categoria": "fragrances",
+      "importe": 40,
+      "stock": 52
+    },
+    {
+      "id": 13,
+      "nombre": "Fog Scent Xpressio Perfume",
+      "marca": "Fog Scent Xpressio",
+      "categoria": "fragrances",
+      "importe": 13,
+      "stock": 61
+    },
+    {
+      "id": 14,
+      "nombre": "Non-Alcoholic Concentrated Perfume Oil",
+      "marca": "Al Munakh",
+      "categoria": "fragrances",
+      "importe": 120,
+      "stock": 114
+    },
+    {
+      "id": 15,
+      "nombre": "Eau De Perfume Spray",
+      "marca": "Lord - Al-Rehab",
+      "categoria": "fragrances",
+      "importe": 30,
+      "stock": 105
+    },
+    {
+      "id": 16,
+      "nombre": "Hyaluronic Acid Serum",
+      "marca": "L'Oreal Paris",
+      "categoria": "skincare",
+      "importe": 19,
+      "stock": 110
+    },
+    {
+      "id": 17,
+      "nombre": "Tree Oil 30ml",
+      "marca": "Hemani Tea",
+      "categoria": "skincare",
+      "importe": 12,
+      "stock": 78
+    },
+    {
+      "id": 18,
+      "nombre": "Oil Free Moisturizer 100ml",
+      "marca": "Dermive",
+      "categoria": "skincare",
+      "importe": 40,
+      "stock": 88
+    },
+    {
+      "id": 19,
+      "nombre": "Skin Beauty Serum.",
+      "marca": "ROREC White Rice",
+      "categoria": "skincare",
+      "importe": 46,
+      "stock": 54
+    },
+    {
+      "id": 20,
+      "nombre": "Freckle Treatment Cream- 15gm",
+      "marca": "Fair & Clear",
+      "categoria": "skincare",
+      "importe": 70,
+      "stock": 140
+    },
+    {
+      "id": 21,
+      "nombre": "- Daal Masoor 500 grams",
+      "marca": "Saaf & Khaas",
+      "categoria": "groceries",
+      "importe": 20,
+      "stock": 133
+    },
+    {
+      "id": 22,
+      "nombre": "Elbow Macaroni - 400 gm",
+      "marca": "Bake Parlor Big",
+      "categoria": "groceries",
+      "importe": 14,
+      "stock": 146
+    },
+    {
+      "id": 23,
+      "nombre": "Orange Essence Food Flavou",
+      "marca": "Baking Food Items",
+      "categoria": "groceries",
+      "importe": 14,
+      "stock": 26
+    },
+    {
+      "id": 24,
+      "nombre": "cereals muesli fruit nuts",
+      "marca": "fauji",
+      "categoria": "groceries",
+      "importe": 46,
+      "stock": 113
+    },
+    {
+      "id": 25,
+      "nombre": "Gulab Powder 50 Gram",
+      "marca": "Dry Rose",
+      "categoria": "groceries",
+      "importe": 70,
+      "stock": 47
+    },
+    {
+      "id": 26,
+      "nombre": "Plant Hanger For Home",
+      "marca": "Boho Decor",
+      "categoria": "home-decoration",
+      "importe": 41,
+      "stock": 131
+    },
+    {
+      "id": 27,
+      "nombre": "Flying Wooden Bird",
+      "marca": "Flying Wooden",
+      "categoria": "home-decoration",
+      "importe": 51,
+      "stock": 17
+    },
+    {
+      "id": 28,
+      "nombre": "3D Embellishment Art Lamp",
+      "marca": "LED Lights",
+      "categoria": "home-decoration",
+      "importe": 20,
+      "stock": 54
+    },
+    {
+      "id": 29,
+      "nombre": "Handcraft Chinese style",
+      "marca": "luxury palace",
+      "categoria": "home-decoration",
+      "importe": 60,
+      "stock": 7
+    },
+    {
+      "id": 30,
+      "nombre": "Key Holder",
+      "marca": "Golden",
+      "categoria": "home-decoration",
+      "importe": 30,
+      "stock": 54
+    },
+    {
+      "id": 31,
+      "nombre": "Mornadi Velvet Bed",
+      "marca": "Furniture Bed Set",
+      "categoria": "furniture",
+      "importe": 40,
+      "stock": 140
+    },
+    {
+      "id": 32,
+      "nombre": "Sofa for Coffe Cafe",
+      "marca": "Ratttan Outdoor",
+      "categoria": "furniture",
+      "importe": 50,
+      "stock": 30
+    },
+    {
+      "id": 33,
+      "nombre": "3 Tier Corner Shelves",
+      "marca": "Kitchen Shelf",
+      "categoria": "furniture",
+      "importe": 700,
+      "stock": 106
+    },
+    {
+      "id": 34,
+      "nombre": "Plastic Table",
+      "marca": "Multi Purpose",
+      "categoria": "furniture",
+      "importe": 50,
+      "stock": 136
+    },
+    {
+      "id": 35,
+      "nombre": "3 DOOR PORTABLE",
+      "marca": "AmnaMart",
+      "categoria": "furniture",
+      "importe": 41,
+      "stock": 68
+    },
+    {
+      "id": 36,
+      "nombre": "Sleeve Shirt Womens",
+      "marca": "Professional Wear",
+      "categoria": "tops",
+      "importe": 90,
+      "stock": 39
+    },
+    {
+      "id": 37,
+      "nombre": "ank Tops for Womens/Girls",
+      "marca": "Soft Cotton",
+      "categoria": "tops",
+      "importe": 50,
+      "stock": 107
+    },
+    {
+      "id": 38,
+      "nombre": "sublimation plain kids tank",
+      "marca": "Soft Cotton",
+      "categoria": "tops",
+      "importe": 100,
+      "stock": 20
+    },
+    {
+      "id": 39,
+      "nombre": "Women Sweaters Wool",
+      "marca": "Top Sweater",
+      "categoria": "tops",
+      "importe": 600,
+      "stock": 55
+    },
+    {
+      "id": 40,
+      "nombre": "women winter clothes",
+      "marca": "Top Sweater",
+      "categoria": "tops",
+      "importe": 57,
+      "stock": 84
+    },
+    {
+      "id": 41,
+      "nombre": "NIGHT SUIT",
+      "marca": "RED MICKY MOUSE..",
+      "categoria": "womens-dresses",
+      "importe": 55,
+      "stock": 21
+    },
+    {
+      "id": 42,
+      "nombre": "Stiched Kurta plus trouser",
+      "marca": "Digital Printed",
+      "categoria": "womens-dresses",
+      "importe": 80,
+      "stock": 148
+    },
+    {
+      "id": 43,
+      "nombre": "frock gold printed",
+      "marca": "Ghazi Fabric",
+      "categoria": "womens-dresses",
+      "importe": 600,
+      "stock": 150
+    },
+    {
+      "id": 44,
+      "nombre": "Ladies Multicolored Dress",
+      "marca": "Ghazi Fabric",
+      "categoria": "womens-dresses",
+      "importe": 79,
+      "stock": 2
+    },
+    {
+      "id": 45,
+      "nombre": "Malai Maxi Dress",
+      "marca": "IELGY",
+      "categoria": "womens-dresses",
+      "importe": 50,
+      "stock": 96
+    },
+    {
+      "id": 46,
+      "nombre": "women's shoes",
+      "marca": "IELGY fashion",
+      "categoria": "womens-shoes",
+      "importe": 40,
+      "stock": 72
+    },
+    {
+      "id": 47,
+      "nombre": "Sneaker shoes",
+      "marca": "Synthetic Leather",
+      "categoria": "womens-shoes",
+      "importe": 120,
+      "stock": 50
+    },
+    {
+      "id": 48,
+      "nombre": "Women Strip Heel",
+      "marca": "Sandals Flip Flops",
+      "categoria": "womens-shoes",
+      "importe": 40,
+      "stock": 25
+    },
+    {
+      "id": 49,
+      "nombre": "Chappals & Shoe Ladies Metallic",
+      "marca": "Maasai Sandals",
+      "categoria": "womens-shoes",
+      "importe": 23,
+      "stock": 107
+    },
+    {
+      "id": 50,
+      "nombre": "Women Shoes",
+      "marca": "Arrivals Genuine",
+      "categoria": "womens-shoes",
+      "importe": 36,
+      "stock": 46
+    },
+    {
+      "id": 51,
+      "nombre": "half sleeves T shirts",
+      "marca": "Vintage Apparel",
+      "categoria": "mens-shirts",
+      "importe": 23,
+      "stock": 132
+    },
+    {
+      "id": 52,
+      "nombre": "FREE FIRE T Shirt",
+      "marca": "FREE FIRE",
+      "categoria": "mens-shirts",
+      "importe": 10,
+      "stock": 128
+    },
+    {
+      "id": 53,
+      "nombre": "printed high quality T shirts",
+      "marca": "Vintage Apparel",
+      "categoria": "mens-shirts",
+      "importe": 35,
+      "stock": 6
+    },
+    {
+      "id": 54,
+      "nombre": "Pubg Printed Graphic T-Shirt",
+      "marca": "The Warehouse",
+      "categoria": "mens-shirts",
+      "importe": 46,
+      "stock": 136
+    },
+    {
+      "id": 55,
+      "nombre": "Money Heist Printed Summer T Shirts",
+      "marca": "The Warehouse",
+      "categoria": "mens-shirts",
+      "importe": 66,
+      "stock": 122
+    },
+    {
+      "id": 56,
+      "nombre": "Sneakers Joggers Shoes",
+      "marca": "Sneakers",
+      "categoria": "mens-shoes",
+      "importe": 40,
+      "stock": 6
+    },
+    {
+      "id": 57,
+      "nombre": "Loafers for men",
+      "marca": "Rubber",
+      "categoria": "mens-shoes",
+      "importe": 47,
+      "stock": 20
+    },
+    {
+      "id": 58,
+      "nombre": "formal offices shoes",
+      "marca": "The Warehouse",
+      "categoria": "mens-shoes",
+      "importe": 57,
+      "stock": 68
+    },
+    {
+      "id": 59,
+      "nombre": "Spring and summershoes",
+      "marca": "Sneakers",
+      "categoria": "mens-shoes",
+      "importe": 20,
+      "stock": 137
+    },
+    {
+      "id": 60,
+      "nombre": "Stylish Casual Jeans Shoes",
+      "marca": "Sneakers",
+      "categoria": "mens-shoes",
+      "importe": 58,
+      "stock": 129
+    },
+    {
+      "id": 61,
+      "nombre": "Leather Straps Wristwatch",
+      "marca": "Naviforce",
+      "categoria": "mens-watches",
+      "importe": 120,
+      "stock": 91
+    },
+    {
+      "id": 62,
+      "nombre": "Waterproof Leather marca Watch",
+      "marca": "SKMEI 9117",
+      "categoria": "mens-watches",
+      "importe": 46,
+      "stock": 95
+    },
+    {
+      "id": 63,
+      "nombre": "Royal Blue Premium Watch",
+      "marca": "SKMEI 9117",
+      "categoria": "mens-watches",
+      "importe": 50,
+      "stock": 142
+    },
+    {
+      "id": 64,
+      "nombre": "Leather Strap Skeleton Watch",
+      "marca": "Strap Skeleton",
+      "categoria": "mens-watches",
+      "importe": 46,
+      "stock": 61
+    },
+    {
+      "id": 65,
+      "nombre": "Stainless Steel Wrist Watch",
+      "marca": "Stainless",
+      "categoria": "mens-watches",
+      "importe": 47,
+      "stock": 94
+    },
+    {
+      "id": 66,
+      "nombre": "Steel Analog Couple Watches",
+      "marca": "Eastern Watches",
+      "categoria": "womens-watches",
+      "importe": 35,
+      "stock": 24
+    },
+    {
+      "id": 67,
+      "nombre": "Fashion Magnetic Wrist Watch",
+      "marca": "Eastern Watches",
+      "categoria": "womens-watches",
+      "importe": 60,
+      "stock": 46
+    },
+    {
+      "id": 68,
+      "nombre": "Stylish Luxury Digital Watch",
+      "marca": "Luxury Digital",
+      "categoria": "womens-watches",
+      "importe": 57,
+      "stock": 77
+    },
+    {
+      "id": 69,
+      "nombre": "Golden Watch Pearls Bracelet Watch",
+      "marca": "Watch Pearls",
+      "categoria": "womens-watches",
+      "importe": 47,
+      "stock": 89
+    },
+    {
+      "id": 70,
+      "nombre": "Stainless Steel Women",
+      "marca": "Bracelet",
+      "categoria": "womens-watches",
+      "importe": 35,
+      "stock": 111
+    },
+    {
+      "id": 71,
+      "nombre": "Women Shoulder Bags",
+      "marca": "LouisWill",
+      "categoria": "womens-bags",
+      "importe": 46,
+      "stock": 17
+    },
+    {
+      "id": 72,
+      "nombre": "Handbag For Girls",
+      "marca": "LouisWill",
+      "categoria": "womens-bags",
+      "importe": 23,
+      "stock": 27
+    },
+    {
+      "id": 73,
+      "nombre": "Fancy hand clutch",
+      "marca": "Bracelet",
+      "categoria": "womens-bags",
+      "importe": 44,
+      "stock": 101
+    },
+    {
+      "id": 74,
+      "nombre": "Leather Hand Bag",
+      "marca": "Copenhagen Luxe",
+      "categoria": "womens-bags",
+      "importe": 57,
+      "stock": 43
+    },
+    {
+      "id": 75,
+      "nombre": "Seven Pocket Women Bag",
+      "marca": "Steal Frame",
+      "categoria": "womens-bags",
+      "importe": 68,
+      "stock": 13
+    },
+    {
+      "id": 76,
+      "nombre": "Silver Ring Set Women",
+      "marca": "Darojay",
+      "categoria": "womens-jewellery",
+      "importe": 70,
+      "stock": 51
+    },
+    {
+      "id": 77,
+      "nombre": "Rose Ring",
+      "marca": "Copenhagen Luxe",
+      "categoria": "womens-jewellery",
+      "importe": 100,
+      "stock": 149
+    },
+    {
+      "id": 78,
+      "nombre": "Rhinestone Korean Style Open Rings",
+      "marca": "Fashion Jewellery",
+      "categoria": "womens-jewellery",
+      "importe": 30,
+      "stock": 9
+    },
+    {
+      "id": 79,
+      "nombre": "Elegant Female Pearl Earrings",
+      "marca": "Fashion Jewellery",
+      "categoria": "womens-jewellery",
+      "importe": 30,
+      "stock": 16
+    },
+    {
+      "id": 80,
+      "nombre": "Chain Pin Tassel Earrings",
+      "marca": "Cuff Butterfly",
+      "categoria": "womens-jewellery",
+      "importe": 45,
+      "stock": 9
+    },
+    {
+      "id": 81,
+      "nombre": "Round Silver Frame Sun Glasses",
+      "marca": "Designer Sun Glasses",
+      "categoria": "sunglasses",
+      "importe": 19,
+      "stock": 78
+    },
+    {
+      "id": 82,
+      "nombre": "Kabir Singh Square Sunglass",
+      "marca": "Designer Sun Glasses",
+      "categoria": "sunglasses",
+      "importe": 50,
+      "stock": 78
+    },
+    {
+      "id": 83,
+      "nombre": "Wiley X Night Vision Yellow Glasses",
+      "marca": "mastar watch",
+      "categoria": "sunglasses",
+      "importe": 30,
+      "stock": 115
+    },
+    {
+      "id": 84,
+      "nombre": "Square Sunglasses",
+      "marca": "mastar watch",
+      "categoria": "sunglasses",
+      "importe": 28,
+      "stock": 64
+    },
+    {
+      "id": 85,
+      "nombre": "LouisWill Men Sunglasses",
+      "marca": "LouisWill",
+      "categoria": "sunglasses",
+      "importe": 50,
+      "stock": 92
+    },
+    {
+      "id": 86,
+      "nombre": "Bluetooth Aux",
+      "marca": "Car Aux",
+      "categoria": "automotive",
+      "importe": 25,
+      "stock": 22
+    },
+    {
+      "id": 87,
+      "nombre": "t Temperature Controller Incubator Controller",
+      "marca": "W1209 DC12V",
+      "categoria": "automotive",
+      "importe": 40,
+      "stock": 37
+    },
+    {
+      "id": 88,
+      "nombre": "TC Reusable Silicone Magic Washing Gloves",
+      "marca": "TC Reusable",
+      "categoria": "automotive",
+      "importe": 29,
+      "stock": 42
+    },
+    {
+      "id": 89,
+      "nombre": "Qualcomm original Car Charger",
+      "marca": "TC Reusable",
+      "categoria": "automotive",
+      "importe": 40,
+      "stock": 79
+    },
+    {
+      "id": 90,
+      "nombre": "Cycle Bike Glow",
+      "marca": "Neon LED Light",
+      "categoria": "automotive",
+      "importe": 35,
+      "stock": 63
+    },
+    {
+      "id": 91,
+      "nombre": "Black Motorbike",
+      "marca": "METRO 70cc Motorcycle - MR70",
+      "categoria": "motorcycle",
+      "importe": 569,
+      "stock": 115
+    },
+    {
+      "id": 92,
+      "nombre": "HOT SALE IN EUROPE electric racing motorcycle",
+      "marca": "BRAVE BULL",
+      "categoria": "motorcycle",
+      "importe": 920,
+      "stock": 22
+    },
+    {
+      "id": 93,
+      "nombre": "Automatic Motor Gas Motorcycles",
+      "marca": "shock absorber",
+      "categoria": "motorcycle",
+      "importe": 1050,
+      "stock": 127
+    },
+    {
+      "id": 94,
+      "nombre": "new arrivals Fashion motocross goggles",
+      "marca": "JIEPOLLY",
+      "categoria": "motorcycle",
+      "importe": 900,
+      "stock": 109
+    },
+    {
+      "id": 95,
+      "nombre": "Wholesale cargo lashing Belt",
+      "marca": "Xiangle",
+      "categoria": "motorcycle",
+      "importe": 930,
+      "stock": 144
+    },
+    {
+      "id": 96,
+      "nombre": "lighting ceiling kitchen",
+      "marca": "lightingbrilliance",
+      "categoria": "lighting",
+      "importe": 30,
+      "stock": 96
+    },
+    {
+      "id": 97,
+      "nombre": "Metal Ceramic Flower",
+      "marca": "Ifei Home",
+      "categoria": "lighting",
+      "importe": 35,
+      "stock": 146
+    },
+    {
+      "id": 98,
+      "nombre": "3 lights lndenpant kitchen islang",
+      "marca": "DADAWU",
+      "categoria": "lighting",
+      "importe": 34,
+      "stock": 44
+    },
+    {
+      "id": 99,
+      "nombre": "American Vintage Wood Pendant Light",
+      "marca": "Ifei Home",
+      "categoria": "lighting",
+      "importe": 46,
+      "stock": 138
+    },
+    {
+      "id": 100,
+      "nombre": "Crystal chandelier maria theresa for 12 light",
+      "marca": "YIOSI",
+      "categoria": "lighting",
+      "importe": 47,
+      "stock": 133
+    }
+ ]

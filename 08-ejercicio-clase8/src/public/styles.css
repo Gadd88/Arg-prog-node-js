@@ -1,0 +1,48 @@
+/* 
+header nav ul{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header nav ul li{
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    text-decoration: underline;
+} */
+*{
+    font-family: sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold';
+}
+
+.container{
+    width: 100%;
+}
+th{
+    font-weight: bolder;
+    color: #fff;
+}
+.col-id{
+    width: 50px;
+}
+.col-prod{
+    width: 200px;
+}
+.col-marca{
+    width: 100px;
+}
+.col-cat{
+    width: 150px;
+}
+.col-precio, .col-stock{
+    width: 80px;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 5px;
+}

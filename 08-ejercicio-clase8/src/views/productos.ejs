@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Lista Productos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Listado de Productos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-id">ID</th>
+                    <th class="col-prod">Nombre</th>
+                    <th class="col-marca">Marca</th>
+                    <th class="col-cat">Categoria</th>
+                    <th class="col-precio">Precio</th>
+                    <th class="col-stock">Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%
+                    for(let i=0; i<productos.length; i++){ %>
+                        <tr>
+                            <td><%= productos[i].id%></td>
+                            <td><%= productos[i].nombre%></td>
+                            <td><%= productos[i].marca%></td>
+                            <td><%= productos[i].categoria%></td>
+                            <td><%= productos[i].importe%></td>
+                            <td><%= productos[i].stock%></td>
+                        </tr>
+                    <% }
+                %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

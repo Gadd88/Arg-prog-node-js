@@ -15,16 +15,31 @@ function leer() {
 
 async function encontrarProducto(nombre){
     const productos = await leer();
+
     let resultado = [];
-    for (let i=0; i<productos.length; i++){
-        if(productos[i].producto.toLowerCase().includes(nombre.toLowerCase())){
-            resultado.push(productos[i]);
+
+    productos.forEach(producto => {
+        if(producto.producto.toLowerCase().includes(nombre.toLowerCase())){
+            resultado.push(producto)
         }
-    }
-    if(resultado = []) {
-        throw new Error("Error. No hay ningun producto con ese nombre")
-    }
-    return resultado
+        if(!resultado){
+            throw new Error("Error. No hay ningun producto con ese nombre")
+        }
+        
+    });
+    return resultado 
+
+
+    // let resultado = [];
+
+    // for(let i=0; i<productos.length;i++){
+    //     if(productos[i].producto.toLowerCase().includes(nombre)){
+    //         resultado.push(productos[i]);
+    //     }else{
+    //         throw new Error("Error. No hay ningun producto con ese nombre")
+    //     }
+    //     return resultado
+    // }
 }
 
 async function encontrarId(id) {

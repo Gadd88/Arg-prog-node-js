@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "nombre": "iPhone 9",
+      "marca": "Apple",
+      "categoria": "smartphones",
+      "precio": 549,
+      "stock": 94
+    },
+    {
+      "id": 2,
+      "nombre": "iPhone X",
+      "marca": "Apple",
+      "categoria": "smartphones",
+      "precio": 899,
+      "stock": 34
+    },
+    {
+      "id": 3,
+      "nombre": "Samsung Universe 9",
+      "marca": "Samsung",
+      "categoria": "smartphones",
+      "precio": 1249,
+      "stock": 36
+    },
+    {
+      "id": 4,
+      "nombre": "OPPOF19",
+      "marca": "OPPO",
+      "categoria": "smartphones",
+      "precio": 280,
+      "stock": 123
+    },
+    {
+      "id": 5,
+      "nombre": "Huawei P30",
+      "marca": "Huawei",
+      "categoria": "smartphones",
+      "precio": 499,
+      "stock": 32
+    }
+]

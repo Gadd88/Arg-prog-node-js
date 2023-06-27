@@ -2,10 +2,12 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 require('dotenv').config();
-const { idProducto, listaProductos, borrarProducto, actualizarProducto } = require('./assets/data.manager');
+const { idProducto, listaProductos, borrarProducto, actualizarProducto, nuevoProducto } = require('./assets/data.manager');
+
 
 // Iniciando server
 const server = express();
+server.use(express.json())
 
 // Rutas ********************************************************************************
 server.get('/', (req,res)=>{

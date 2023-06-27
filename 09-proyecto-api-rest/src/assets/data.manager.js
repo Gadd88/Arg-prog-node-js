@@ -56,14 +56,14 @@ async function borrarProducto(id){
 
     const producto = productos[index];
     productos.splice(index, 1)
-    await cargarDatos(producto)
+    await cargarDatos(productos)
     
     return producto;   
     
 }
 
 async function nuevoProducto(producto){
-    if (!producto?.id || !producto?.nombre || !producto?.marca || !producto?.categoria || !producto?.precio || !producto?.stock) throw new Error('Error. Datos Incompletos')
+    if (!producto?.nombre || !producto?.marca || !producto?.categoria || !producto?.precio || !producto?.stock) throw new Error('Error. Datos Incompletos')
 
     const productos = await leerDatos();
     const nuevoProd = {id: generarId(productos), ...producto}
@@ -85,7 +85,7 @@ async function actualizarProducto(producto){
     productos[index] = producto;
     await cargarDatos(productos);
 
-    return productos(index);
+    return producto;
 }
 
 async function idProducto(id){

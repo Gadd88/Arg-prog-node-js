@@ -5,6 +5,8 @@ const fs = require('fs');
 require('dotenv').config();
 const { idProducto, listaProductos, borrarProducto, actualizarProducto, nuevoProducto } = require('./assets/data.manager');
 const productos = require('./public/lista-productos.json')
+const PORT = process.env.SERVER_PORT || 3000;
+const HOST = process.env.SERVER_HOST || '127.0.0.1';
 
 // Iniciando server
 const server = express();
@@ -74,6 +76,6 @@ server.get('*', (req,res)=>{
     res.status(404).send("<h1>Pagina no encontrada</h1>")
 })
 
-server.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
-    console.log(`Servidor corriendo en: http://${process.env.SERVER_HOST}:${process.env.SERVER_PORT}`)
+server.listen(PORT, HOST, () => {
+    console.log(`Servidor corriendo en: http://${HOST}:${PORT}`)
 })

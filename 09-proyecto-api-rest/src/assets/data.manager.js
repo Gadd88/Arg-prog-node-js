@@ -42,7 +42,12 @@ function generarId(productos){
 
 async function listaProductos(){
     const productos = await leerDatos();
-    return productos
+    
+    if(!productos){
+        throw new Error('Error. No se pudo presentar la lissta')
+    }else{
+        return productos
+    }
 }
 
 async function borrarProducto(id){

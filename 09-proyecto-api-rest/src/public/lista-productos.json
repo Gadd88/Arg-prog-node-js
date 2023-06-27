@@ -25,11 +25,11 @@
 	},
 	{
 		"id": 4,
-		"nombre": "OPPOF19",
-		"marca": "OPPO",
+		"nombre": "Xiaomi Mi 9 64GB",
+		"marca": "Xiaomi",
 		"categoria": "smartphones",
-		"precio": 280,
-		"stock": 123
+		"precio": 199,
+		"stock": 6
 	},
 	{
 		"id": 5,
@@ -38,5 +38,13 @@
 		"categoria": "laptop",
 		"precio": 1249,
 		"stock": 6
+	},
+	{
+		"id": 6,
+		"nombre": "Motorola G32 128GB",
+		"marca": "Motorola",
+		"categoria": "smartphones",
+		"precio": 299,
+		"stock": 3
 	}
 ]

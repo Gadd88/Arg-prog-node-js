@@ -1,0 +1,38 @@
+<%-include('../partials/header.ejs')%>
+
+
+
+    <div class="container">
+        <h1 class="title">Seccion Principal de Productos</h1>
+        <hr>
+        <h2>Tabla de Productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-id">ID</th>
+                    <th class="col-prod">Producto</th>
+                    <th class="col-marca">Marca</th>
+                    <th class="col-categoria">Categoria</th>
+                    <th class="col-precio">Precio</th>
+                    <th class="col-stock">Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% 
+                    for (let i = 0; i < productos.length; i++) { %> 
+                        <tr>
+                            <td class="id"><%= productos[i].id %></td>
+                            <td class="producto"><%= productos[i].nombre %></td>
+                            <td class="marca"><%= productos[i].marca %></td>
+                            <td class="categoria"><%= productos[i].categoria %></td>
+                            <td class="precio">$<%= productos[i].precio%></td>
+                            <td class="stock"><%= productos[i].stock%></td>
+                        </tr>
+                    <% }
+                %>
+            </tbody>
+        </table>
+    </div>
+
+
+<%-include('../partials/footer.ejs')%>

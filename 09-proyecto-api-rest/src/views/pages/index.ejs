@@ -1,0 +1,46 @@
+<%-include('../partials/header.ejs')%>
+
+<div class="container">
+    <h2>Rutas Disponibles</h2>
+    <br>
+    <hr>
+    <br>
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th class="col-metodo">Direccion o Método HTTP</th>
+                <th class="col-fun">Función</th>
+                <th class="col-res">Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>/productos</td>
+                <td>Obtiene listado completo de los productos</td>
+                <td>Plantilla HTML</td>
+            </tr>
+            <tr>
+                <td>GET/id</td>
+                <td>Obtiene producto correspondiente con ID solicitada</td>
+                <td>JSON</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>Crea un nuevo producto indicando los parámetros: {nombre, marca, categoria, precio, stock}, el ID se genera automaticamente</td>
+                <td>JSON</td>
+            </tr>
+            <tr>
+                <td>PUT/id</td>
+                <td>Modifica el producto correspondiente al ID provisto indicando los parámetros: {nombre, marca, categoria, precio, stock}</td>
+                <td>JSON</td>
+            </tr>
+            <tr>
+                <td>DELETE/id</td>
+                <td>Elimina el producto correspondiente con el ID provisto/td>
+                <td>JSON</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<%-include('../partials/footer.ejs')%>

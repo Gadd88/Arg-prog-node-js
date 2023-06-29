@@ -3,22 +3,32 @@
 <div class="container">
     <h2>Rutas Disponibles</h2>
     <br>
-    <hr>
     <br>
-    <table id="tabla">
+    <table class="tabla">
         <thead>
             <tr>
-                <th class="col-metodo">Direccion o Método HTTP</th>
+                <th class="col-metodo">Dirección</th>
                 <th class="col-fun">Función</th>
                 <th class="col-res">Resultado</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>/productos</td>
+                <td><a href="/productos">/productos</a></td>
                 <td>Obtiene listado completo de los productos</td>
                 <td>Plantilla HTML</td>
             </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <table class="tabla">
+        <thead>
+            <th class="col-metodo">Métodos HTTP para uso de API</th>
+            <th class="col-fun">Función</th>
+            <th class="col-res">Resultado</th>
+        </thead>
+        <tbody>
             <tr>
                 <td>GET/id</td>
                 <td>Obtiene producto correspondiente con ID solicitada</td>

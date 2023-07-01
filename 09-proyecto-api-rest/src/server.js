@@ -15,6 +15,7 @@ server.use(express.static(path.join(__dirname,'public')))
 // Middlewares
 server.set('view engine', 'ejs')
 server.use(express.json())
+server.use(express.urlencoded({extended: true}));
 
 const views = path.join(__dirname, './views')
 

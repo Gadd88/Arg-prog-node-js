@@ -1,13 +1,16 @@
 const express = require('express');
 require('dotenv').config();
 
+//require("dotenv").config({ path: path.join(__dirname, ".env") } );
+//por si el env se encuentra en otra carpeta
+
 const { MongoClient } = require('mongodb');
 
 const URI = process.env.MONGO_URL;
 const client = new MongoClient(URI);
 
 
-async function connectToMongoDB() {
+async function conectarMongoDB() {
     try{
         await client.connect();
                 console.log('Conectado a MongoDB');
@@ -18,7 +21,7 @@ async function connectToMongoDB() {
     }
 }
 
-async function disconnectFromMongoDB(){
+async function desconectarMongoDB(){
     try{
         await client.close();
                 console.log('Desconectado de MongoDB');
@@ -27,4 +30,4 @@ async function disconnectFromMongoDB(){
     }
 }
 
-module.exports = { connectToMongoDB, disconnectFromMongoDB };
+module.exports = { conectarMongoDB, desconectarMongoDB };

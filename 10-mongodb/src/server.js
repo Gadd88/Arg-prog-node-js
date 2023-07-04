@@ -1,3 +1,4 @@
+const express = require('express');
 const server = express();
 const HOST = process.env.HOST || '127.0.0.1';
 const PORT = process.env.PORT || 3000;
@@ -25,7 +26,7 @@ server.get('/frutas', async (req,res)=>{
     const frutas = await db.collection('frutas').find().toArray(); //la collection es la TABLA que queremos utilizar dentro de la base de datos que elegimos
 
     await desconectarMongoDB();
-        res.json(frutas);
+    res.json(frutas);
 })
 
 server.get('/frutas/:id', async (req,res)=>{

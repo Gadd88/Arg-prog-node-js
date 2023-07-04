@@ -22,7 +22,7 @@ async function getCoches(){
 
     const db = await client.db('prueba'); //no necesita await ya que no surte efecto
     
-    const coches = await db.collection('coches').find().toArray;
+    const coches = await db.collection('coches').find().toArray();
     
     console.table(coches) //mas facil de leer al ser varios elementos
 

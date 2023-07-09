@@ -20,7 +20,7 @@ server.get('/api/productos', async (req, res)=>{
     
 })
 
-OBTENER PRODUCTO POR ID
+//OBTENER PRODUCTO POR ID
 server.get('/api/productos/:id', async (req, res) => {
     const { id } = req.params
 
@@ -53,6 +53,7 @@ server.get('/api/productos/:id', async (req, res) => {
 
 //     res.status(200).send(JSON.stringify(producto, null, '\t'));
 // })
+
 
 //AGREGAR UN PRODUCTO NUEVO
 server.post('/api/productos', async (req, res) => {

@@ -20,7 +20,7 @@ server.get('/api/productos', async (req, res)=>{
     
 })
 
-//OBTENER PRODUCTO POR ID
+OBTENER PRODUCTO POR ID
 server.get('/api/productos/:id', async (req, res) => {
     const { id } = req.params
 
@@ -33,6 +33,26 @@ server.get('/api/productos/:id', async (req, res) => {
 
     res.status(200).send(JSON.stringify(producto, null, '\t'));
 })
+
+
+//OBTENER PRODUCTO POR NOMBRE - necesito seguir revisando
+// server.get('/api/productos/:nombre', async (req, res) => {
+//     const { nombre } = req.params
+    
+
+//     const collection = await connectToDB('productos');
+//     collection.createIndex({nombre: 'text'})
+    
+//     const producto = await collection.find({ $text: {$search: /nombre/}}) ;
+
+//     process.env.DB_USED.collection.dropIndex("nombre_text")
+    
+//     if(!producto){
+//         return res.status(404).send('Error. No se encuentra producto con el nombre solicitado')
+//     }
+
+//     res.status(200).send(JSON.stringify(producto, null, '\t'));
+// })
 
 //AGREGAR UN PRODUCTO NUEVO
 server.post('/api/productos', async (req, res) => {
@@ -103,15 +123,6 @@ server.delete('/api/productos/:id', async (req,res) =>{
         res.status(404).send(error.message)
     }
 })
-
-
-
-
-
-
-
-
-
 
 
 

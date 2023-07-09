@@ -44,6 +44,7 @@ async function connectToDB(connectionName){
 }
 
 async function generateID(collection){
+
     const documentMaxId = await collection.find().sort({ id: -1 }).limit(1).toArray(); //ordenamos el resultado en orden descendente y capturamos al de mayor ID
     const maxId = documentMaxId[0]?.id ?? 0; //verificamos si existe el 1er elemento del array y ocupamos su id, si no, el maxId es 0
 

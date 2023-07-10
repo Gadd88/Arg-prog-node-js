@@ -41,11 +41,12 @@ server.get('/api/productos/:id', async (req, res) => {
     
 
 //     const collection = await connectToDB('productos');
-//     collection.createIndex({nombre: 'text'})
     
-//     const producto = await collection.find({ $text: {$search: /nombre/}}) ;
+//     await collection.createIndex({nombre: 'text'})
+    
+//     const producto = collection.find({ $text: {$search: /nombre/}}).toArray();
 
-//     process.env.DB_USED.collection.dropIndex("nombre_text")
+    
     
 //     if(!producto){
 //         return res.status(404).send('Error. No se encuentra producto con el nombre solicitado')

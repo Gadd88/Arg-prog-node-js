@@ -20,3 +20,6 @@ const uuidFormateado = uuid1.replaceAll('-', '').slice(0,10); //replaceAll elimi
 
 console.log(uuidFormateado);
 
+//INSTALAMOS EL MODULO JSONWEBTOKEN
+//-npm install jsonwebtoken
+//-utilizamos el randomUUID para generar un token aleatorio para mejorar la seguridad y lo utilizamos para crear una variable SECRET_KEY dentro de un archivo .env, tambien agregamos un PORT

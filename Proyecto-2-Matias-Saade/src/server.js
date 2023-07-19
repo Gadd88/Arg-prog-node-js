@@ -16,14 +16,13 @@ const { connectToDB, disconnect, generateCod } = require('../connection_db');
 
 //  OBTENER TODOS LOS PRODUCTOS
 server.get('/api/v1/muebles', async (req, res) => {
-    const {categoria, precio_menor_que, precio_mayor_que} = req.query;
+    const {categoria, precio_lte, precio_gte} = req.query;
     let muebles = [];
     try {
         const collection = await connectToDB('muebles');
         if (categoria) muebles = await collection.find({ categoria }).sort({ nombre: 1 }).toArray();
-        //  else if (precio === 'min') muebles = await collection.find().sort({ precio: 1 }).limit(1).toArray();
-        else if (precio_menor_que) muebles = await collection.find({ precio: { $lte: Number(precio_menor_que) }}).sort({ precio: -1 }).toArray();
-        else if (precio_mayor_que) muebles = await collection.find({ precio: { $gte: Number(precio_mayor_que) }}).sort({ precio: 1 }).toArray();
+        else if (precio_lte) muebles = await collection.find({ precio: { $lte: Number(precio_lte) }}).sort({ precio: -1 }).toArray();
+        else if (precio_gte) muebles = await collection.find({ precio: { $gte: Number(precio_gte) }}).sort({ precio: 1 }).toArray();
         else muebles = await collection.find().toArray();
 
         res.status(200).send(JSON.stringify({ payload: muebles }));
@@ -35,7 +34,7 @@ server.get('/api/v1/muebles', async (req, res) => {
     }
 });
 
-//  OBTENER PRODUCTO POR ID
+//  OBTENER PRODUCTO POR CODIGO
 server.get('/api/v1/muebles/:codigo', async (req, res) => {
     const { codigo } = req.params;
 
@@ -57,14 +56,14 @@ server.get('/api/v1/muebles/:codigo', async (req, res) => {
 server.post('/api/v1/muebles', async (req, res) => {
     const { nombre, categoria, precio } = req.body;
 
-    if (!nombre || !categoria || !precio) {
+    if (!nombre && !categoria && !precio) {
         return res.status(400).send(messageMissingData);
     }
 
     try {
         const collection = await connectToDB('muebles');
 
-        const mueble = {id: await generateCod(collection), nombre, categoria, precio};
+        const mueble = {codigo: await generateCod(collection), nombre, categoria, precio};
 
         await collection.insertOne(mueble);
 
@@ -81,17 +80,21 @@ server.post('/api/v1/muebles', async (req, res) => {
 server.put('/api/v1/muebles/:codigo', async (req, res) => {
     const { codigo } = req.params;
     const { nombre, categoria, precio } = req.body;
-
-    if (!codigo) return res.status(400).send({ message: 'El codigo no corresponde a un mueble registrado' });
-    if (!nombre && !categoria && !precio) return res.status(400).send('Faltan datos relevantes');
+    if (!nombre && !categoria && !precio) return res.status(400).send({ message: 'Faltan datos relevantes' });
 
     try {
         const collection = await connectToDB('muebles');
+        let mueble = await collection.findOne({ codigo: Number(codigo) });
+        if (!mueble) return res.status(400).send({ message: 'El código no corresponde a un mueble registrado' });
+        mueble = { nombre, precio, categoria };
+        if (nombre) mueble.nombre = nombre;
+        if (precio) mueble.precio = precio;
+        if (categoria) mueble.categoria = categoria;
         await collection.updateOne({ codigo: Number(codigo) }, { $set: req.body });
-        res.status(200).send({ message: 'Registro actualizado', payload: collection.codigo });
+        res.status(200).send({ message: 'Registro actualizado', payload: codigo, ...mueble });
     } catch (error) {
-        console.log(error);
-        res.status(400).send({ message: 'El codigo no corresponde a un mueble registrado'});
+        console.log(error.message);
+        res.status(500).send({ message: 'Se ha generado un error en el servido' });
     } finally {
         await disconnect();
     }
@@ -99,17 +102,18 @@ server.put('/api/v1/muebles/:codigo', async (req, res) => {
 
 
 //  ELIMINAR UN MUEBLE
-server.delete('/api/v1/muebles/:id', async (req, res) => {
-    const { id } = req.params;
+server.delete('/api/v1/muebles/:codigo', async (req, res) => {
+    const { codigo } = req.params;
 
     try {
         const collection = await connectToDB('muebles');
-        const mueble = await collection.findOne({ id: {$eq: Number(id)} });
+        const mueble = await collection.findOne({ codigo: {$eq: Number(codigo)} });
+        if (!mueble) return res.status(400).send({ message: 'El código no corresponde a un mueble registrado' });
         await collection.deleteOne(mueble);
         res.status(200).send({ message: 'Registro eliminado' });
     } catch (error) {
         console.log(error);
-        res.status(400).send({ message: 'El código no corresponde a un mueble registrado' });
+        res.status(500).send({message: 'Se ha generado un error en el servidor' });
     } finally {
         disconnect();
     }

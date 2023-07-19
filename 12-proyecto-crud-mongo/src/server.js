@@ -36,23 +36,54 @@ server.get('/api/productos/:id', async (req, res) => {
 
 
 //OBTENER PRODUCTO POR NOMBRE - necesito seguir revisando
-// server.get('/api/productos/:nombre', async (req, res) => {
-//     const { nombre } = req.params
+// server.get('/api/productos', async (req, res) => {
+//     const { nombre } = req.query
     
 
 //     const collection = await connectToDB('productos');
     
-//     await collection.createIndex({nombre: 'text'})
+    // await collection.createIndex({nombre: 'text'})
     
-//     const producto = collection.find({ $text: {$search: /nombre/}}).toArray();
+    // const producto = collection.find({ $text: {$search: /nombre/}}).toArray();
 
+//PROBAR***************************************
+// let productoNombre = RegExp(nombreQuery, "i");
+// productos = await collection.find({ nombre: productoNombre}).toArray();
     
+    // const producto = collection.
     
 //     if(!producto){
 //         return res.status(404).send('Error. No se encuentra producto con el nombre solicitado')
 //     }
-
 //     res.status(200).send(JSON.stringify(producto, null, '\t'));
+
+//FUNCIONA/////////////
+//     const {nombre, marca, precio, categoria}=req.query;
+//     const filtros={};
+
+//     if(codigo) filtros.codigo=Number(codigo);
+//     if (nombre){
+//         let nombreBuscado = RegExp(nombre,"i");
+//         filtros.nombre = nombreBuscado;
+//     }
+
+//     if (precio) filtros.precio = Number(precio);
+//     if (categoria) filtros.categoria = categoria;
+    
+//     let productos=[];
+
+//     const collection = await connectToDB('productos');
+
+//     if(!collection) return res.status(400).send(`Error. No pudo recuperarse la DB solicitada`)
+
+//     productos = await collection.find(filtros).toArray();
+
+//     disconnect();
+
+//     if(productos.length===0) return res.status(400).send(`Error. No pudo recuperarse la informacion`)
+
+//     res.status(200).send(JSON.stringify(productos,null,"\t"));
+
 // })
 
 

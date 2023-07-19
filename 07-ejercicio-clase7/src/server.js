@@ -33,26 +33,22 @@ server.get('/productos', (req,res) => {
 
 })
 
-server.get('/productos/:id?/:producto', (req,res) =>{
-    const { id, producto } = req.params;
+server.get('/productos/:id', (req,res) =>{
+    const { id } = req.params;
 
-    if(id){
         encontrarId(Number(id))
             .then((producto) => res.status(200).send(producto))
             .catch((error) => res.status(400).send(error.message))
-    }else{
-        encontrarProducto(producto)
-            .then((producto) => res.status(200).send(producto))
-            .catch((error) => res.status(400).send(error.message));
-    }
+    
 })
 
-// server.get('/productos/:producto', (req,res) =>{
-//     const { producto } = req.params;
+// server.get('/productos', (req,res) =>{
+//     const { producto } = req.query;
 
 //     encontrarProducto(producto)
 //         .then((producto) => res.status(200).send(producto))
 //         .catch((error) => res.status(400).send(error.message));
+    
 // })
 
 //control de rutas inexistentes

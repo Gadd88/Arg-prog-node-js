@@ -79,7 +79,7 @@ server.post('/api/v1/muebles', async (req, res) => {
 //  ACTUALIZAR UN MUEBLE
 server.put('/api/v1/muebles/:codigo', async (req, res) => {
     const { codigo } = req.params;
-    const { nombre, categoria, precio, color } = req.body;
+    const { nombre, categoria, precio } = req.body;
     if (!nombre && !categoria && !precio) return res.status(400).send({ message: 'Faltan datos relevantes' });
 
     try {
@@ -87,9 +87,10 @@ server.put('/api/v1/muebles/:codigo', async (req, res) => {
         let mueble = await collection.findOne({ codigo: Number(codigo) });
         if (!mueble) return res.status(400).send({ message: 'El código no corresponde a un mueble registrado' });
         mueble = { nombre, precio, categoria };
-        if (color) mueble.color = color;
-
-        await collection.updateOne({ codigo: Number(codigo) }, { $set: mueble });
+        if (nombre) mueble.nombre = nombre;
+        if (precio) mueble.precio = precio;
+        if (categoria) mueble.categoria = categoria;
+        await collection.updateOne({ codigo: Number(codigo) }, { $set: req.body });
         res.status(200).send({ message: 'Registro actualizado', payload: codigo, ...mueble });
     } catch (error) {
         console.log(error.message);

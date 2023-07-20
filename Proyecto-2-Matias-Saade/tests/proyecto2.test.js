@@ -232,6 +232,7 @@ async function run() {
                 subTitle: `No debe existir la propiedad color en el registro con código 16`,
                 result: (data && data.payload && data.payload.color === undefined)
             })
+
         ]
     );
 
